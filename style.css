@@ -1,4 +1,3 @@
-/* ===== Global Styling ===== */
 * {
   margin: 0;
   padding: 0;
@@ -7,27 +6,25 @@
 }
 
 body {
-  background: #F9F5F2; /* pastel cream */
+  background: #F9F5F2; 
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* ===== Quiz Container ===== */
 #quiz-container {
-  background: #FAE8E0; /* soft pastel peach */
+  background: #FAE8E0; 
   padding: 30px;
   width: 90%;
   max-width: 550px;
   border-radius: 20px;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.31);
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* ===== Question Styling ===== */
 #question {
   font-size: 1.4rem;
   color: #3c3c3c;
@@ -35,7 +32,6 @@ body {
   text-align: center;
 }
 
-/* ===== Options Button Styling ===== */
 #options {
   display: flex;
   flex-direction: column;
@@ -44,7 +40,7 @@ body {
 
 .option {
   padding: 12px;
-  background: #E8F0FE; /* soft pastel blue */
+  background: #E8F0FE; 
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -56,23 +52,22 @@ body {
 }
 
 .option:hover {
-  background: #DCE7FF; /* slightly darker pastel blue */
+  background: #DCE7FF; 
   transform: scale(1.03);
 }
 
 .option.correct {
-  background: #C8E6C9; /* pastel green */
+  background: #C8E6C9; 
 }
 
 .option.wrong {
-  background: #FFCDD2; /* pastel red */
+  background: #FFCDD2; 
 }
 
-/* ===== Next Button ===== */
 #nextBtn {
   padding: 12px;
   width: 100%;
-  background: #D7E3FC; /* smooth pastel lavender-blue */
+  background: #D7E3FC; 
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -80,17 +75,45 @@ body {
   font-weight: 600;
   color: #3c3c3c;
   transition: 0.3s ease;
-  display: none; /* hidden until answer is selected */
+  display: none; 
 }
 
 #nextBtn:hover {
   background: #C4D7FF;
 }
 
-/* ===== Score Styling ===== */
 #score {
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
   color: #3c3c3c;
+}
+
+/* ===== Start & Restart Buttons ===== */
+#startBtn, 
+#restartBtn {
+  padding: 14px 18px;
+  width: 100%;
+  background: #D7E3FC; /* soft pastel lavender-blue */
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #3c3c3c;
+  transition: 0.3s ease;
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+}
+
+#startBtn:hover,
+#restartBtn:hover {
+  background: #C4D7FF; 
+  border: 1px solid rgba(0, 0, 0, 0.381);
+  transform: scale(1.03);
+}
+
+#restartBtn {
+  display: none;
 }

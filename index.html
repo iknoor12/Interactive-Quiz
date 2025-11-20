@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Interactive - Quiz</h1>
-    <div class="quiz-container">
-        <h3 class="question"></h3>
-        <button>Next Quiz</button>
+    <div id="quiz-container">
+        <h2 id="question">Interactive Quiz</h2>
+        <div id="options"></div>
+        <button id="startBtn">Start Quiz</button>
+        <button id="restartBtn" style="display: none;">Restart Quiz</button>
+        <button id="nextBtn">Next</button>
+        <h3 id="score"></h3>
     </div>
 
     <script src="script.js"></script>
